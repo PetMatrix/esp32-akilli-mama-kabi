@@ -1,0 +1,19 @@
+| Bileşen                   | ESP32 Pin                  | Açıklama                   |
+| ------------------------- | -------------------------- | -------------------------- |
+| **DRV8825 STEP**          | GPIO26                     | Step sinyali               |
+| **DRV8825 DIR**           | GPIO27                     | Yön kontrolü               |
+| **DRV8825 EN**            | GPIO25                     | Enable (LOW = aktif)       |
+| **DRV8825 VMOT**          | 12V (LM2596 çıkışı)        | Motor besleme              |
+| **DRV8825 GND**           | GND                        | Ortak toprak               |
+| **DRV8825 SLP & RST**     | 3.3V ile köprülenmiş       | Uyku devre dışı            |
+| **NEMA17 Motor**          | DRV8825 çıkış A1-A2, B1-B2 | Bobin bağlantıları         |
+| **DS3231 SDA**            | GPIO21                     | I²C veri hattı             |
+| **DS3231 SCL**            | GPIO22                     | I²C saat hattı             |
+| **DS3231 VCC**            | 3.3V                       | Besleme                    |
+| **DS3231 GND**            | GND                        | Ortak toprak               |
+| **LM2596 IN+**            | 12V adaptör                | Ana giriş                  |
+| **LM2596 IN-**            | GND                        | Ortak toprak               |
+| **LM2596 OUT+**           | 3.3V hattı                 | ESP32 ve DRV8825 beslemesi |
+| **LM2596 OUT-**           | GND                        | Ortak toprak               |
+| **Manuel Besleme Butonu** | GPIO4                      | Dahili pull-up ile         |
+| **LED Göstergesi**        | GPIO2                      | Mama verme durumu LED’i    |
